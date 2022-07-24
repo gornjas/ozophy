@@ -1,20 +1,21 @@
 def f():
-    if get_surface_color() == BLACK:
+    c = get_surface_color()
+    if c == BLACK:
         color(0, 0, 0)
-    if get_surface_color() == RED:
-        color(127, 0, 0)
-    if get_surface_color() == GREEN:
-        color(0, 127, 0)
-    if get_surface_color() == BLUE:
+    elif c == BLUE:
         color(0, 0, 127)
-    if get_surface_color() == WHITE:
-        color(127, 127, 127)
-    if get_surface_color() == YELLOW:
-        color(127, 127, 0)
-    if get_surface_color() == CYAN:
+    elif c == GREEN:
+        color(0, 127, 0)
+    elif c == CYAN:
         color(0, 127, 127)
-    if get_surface_color() == MAGENTA:
+    elif c == RED:
+        color(127, 0, 0)
+    elif c == MAGENTA:
         color(127, 0, 127)
+    elif c == YELLOW:
+        color(127, 127, 0)
+    else: # WHITE
+        color(127, 127, 127)
 
 while True:
     f()

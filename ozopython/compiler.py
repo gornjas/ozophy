@@ -143,7 +143,7 @@ class Compiler:
     def compile_expr(self, node):
         if type(node) == Call:
             self.call(node)
-        elif type(node) == Num:
+        elif type(node) == Constant:
             self.num(node)
         elif type(node) == Name:
             self.get_var(node)

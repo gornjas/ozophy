@@ -51,6 +51,7 @@ There are 4 built in functions to control the robot on line navigation:
 `pick_direction(direction)` - picks a given direction at an intersection.
 
 It is also possible to set and read the line following speed:
+
 `set_line_speed(speed)` - sets the line following speed to the given value  
 `get_line_speed()` - gets the current line following speed
 
